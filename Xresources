@@ -1,0 +1,86 @@
+! Neon Colors
+
+
+*background 		: [75]#111111
+*foreground 		: #F8F8F8
+
+! black
+*color0  			: #666666
+*color8  			: #999999
+
+! red
+*color1  			: #D81765
+*color9  			: #FF0000
+
+! green
+*color2  			: #97D01A
+*color10 			: #76B639
+
+! yellow
+*color3  			: #FFA800
+*color11 			: #E1A126
+
+! blue
+*color4  			: #16B1FB
+*color12 			: #289CD5
+
+! magenta
+*color5  			: #FF2491
+*color13 			: #FF2491
+
+! cyan
+*color6  			: #0FDCB6
+*color14 			: #0A9B81
+
+! white
+*color7  			: #EBEBEB
+*color15 			: #F8F8F8
+
+!! URxvt Appearance
+URxvt.font: xft:0xProto Nerd Font Mono:size=15
+URxvt.letterSpace: 1
+URxvt.geometry: 100x100
+URxvt.lineSpace: 0
+URxvt.internalBorder: 0
+URxvt.cursorBlink: false
+URxvt.cursorUnderline: false
+URxvt.saveline: 1000
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: false
+URxvt.depth: 32
+URxvt.iso14755: false
+URxvt.intensityStyles: false
+
+
+
+!! Common Keybinds for Navigations
+! Scrolling
+URxvt.keysym.Control-K: command:\033]720;1\007
+URxvt.keysym.Control-J: command:\033]721;1\007
+
+! Common Keybinds for Font resize
+URxvt.resize-font.step:   1
+URxvt.keysym.C-minus:     resize-font:smaller
+URxvt.keysym.C-plus:      resize-font:bigger
+URxvt.keysym.C-0:     resize-font:reset
+URxvt.keysym.C-question:  resize-font:show
+
+! Copy Paste & Other Extensions
+URxvt.perl-lib: /home/imrane/.config/rxvt-lib/
+URxvt.perl-ext-common: default,clipboard,resize-font,url-select,keyboard-select
+URxvt.copyCommand: xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+URxvt.keysym.Control-C: perl:clipboard:copy
+URxvt.keysym.Control-V: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.M-[: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.urlLauncher: firefox
+URxvt.underlineURLs: true
+URxvt.url-select.underline: true
+URxvt.urlButton: 1
+
+/*Xcursor.theme: Volantes-Dark*/
+/*Xcursor.size: 32*/
