@@ -1,0 +1,128 @@
+# "$schema" = 'https://starship.rs/config-schema.json'
+
+# [┬─\\[](dimmed white)$username$hostname[\\]](dimmed white)\
+
+format = """
+[╭─\\[](dimmed white)$username$hostname[\\]](dimmed white)\
+$directory\
+$git_branch\
+$nodejs\
+$php\
+$python\
+$docker_context\
+$container\
+$fill\
+$cmd_duration\
+$battery\
+$time\
+$git_status\
+$character
+[╰─╼](dimmed white) 
+"""
+right_format = ""
+add_newline = false
+
+
+[fill]
+# symbol = '─'
+symbol = ' '
+style = 'dimmed white'
+
+[username]
+style_user = "bold yellow"
+style_root = "bold red"
+format = "[$user]($style)"
+disabled = false
+show_always = true
+
+# HOSTNAME
+[hostname]
+ssh_only = false
+format = "[@](bold green)[$hostname](bold cyan)"
+disabled = false
+
+# CURRENT DIRECTORY
+[directory]
+style = "bold blue"
+format = "[─\\[](dimmed white)[[$read_only](dimmed red)$path]($style)[\\]](dimmed white)"
+read_only = ":"
+
+# GIT BRANCH
+[git_branch]
+format = "[─\\[](dimmed white)[$branch](bold green)[\\]](dimmed white)"
+only_attached = false
+
+[cmd_duration]
+format = "[󰔛 $duration ](dimmed white)"
+
+[container]
+format = "[─\\[](dimmed white)[ $symbol $name]($style)[\\]](dimmed white)"
+
+[docker_context]
+format = "[─\\[](dimmed white)[ $context](cyan)[\\]](dimmed white)"
+disabled = false
+
+[status]
+style = "bold red"
+format = "[$status](red)"
+disabled = false
+
+[time]
+# disabled = false
+format = "[$time ](dimmed white)"
+use_12hr = true
+time_format = '%R %p'
+
+[nodejs]
+format = "[─\\[](dimmed white)[󰎙 $version](green)[\\]](dimmed white)"
+
+[php]
+format = "[─\\[](dimmed white)[ $version](blue)[\\]](dimmed white)"
+
+[python]
+format = "[─\\[](dimmed white)[ $version](yellow)[\\]](dimmed white)"
+
+[git_status]
+format="$staged $modified $untracked"
+untracked = '[󰈉 ](dimmed white)'
+modified = '[󰏫 ](yellow)'
+staged = '[ ](green)'
+
+[character]
+format = "$symbol"
+success_symbol = ""
+error_symbol = "[](red)"
+vimcmd_symbol =	''
+vimcmd_replace_one_symbol =	''
+vimcmd_replace_symbol =	''
+vimcmd_visual_symbol = ''
+
+[battery]
+format = "[$symbol$percentage ]($style)"
+full_symbol = '󰁹 '
+charging_symbol =	'󰂄 '
+discharging_symbol =	'󰂃 '
+unknown_symbol =	'󰁽 '
+empty_symbol =	'󰂎 '
+
+
+[[battery.display]]
+threshold = 10
+style = 'red'
+
+[[battery.display]]
+threshold = 30
+style = 'dimmed yellow'
+
+# [[battery.display]]
+# threshold = 100
+# style = 'dimmed green'
+
+[shell]
+fish_indicator = '󰈺 '
+bash_indicator = ' '
+powershell_indicator = ' '
+zsh_indicator =	'󰬡'
+unknown_indicator = ''
+style = 'cyan bold'
+disabled = false

@@ -1,0 +1,144 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[╭─](bright-black dimmed)\
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_commit\
+$shell\
+$nodejs\
+$php\
+$python\
+$docker_context\
+$container\
+$fill\
+$cmd_duration\
+$battery\
+$time\
+$git_state\
+$git_status\
+$character
+[╰─╼](bright-black dimmed) 
+"""
+right_format = ""
+add_newline = false
+
+
+[fill]
+symbol = ' '
+
+[username]
+style_user = "bold yellow"
+style_root = "bold red"
+format = " [$user]($style)"
+disabled = false
+show_always = true
+
+# HOSTNAME
+[hostname]
+ssh_only = false
+format = " at [$hostname](bold cyan)"
+disabled = false
+
+# CURRENT DIRECTORY
+[directory]
+style = "bold blue"
+format = " in [[$read_only](dimmed red)$path]($style)"
+read_only = ":"
+
+[git_branch]
+format = " on [$branch](bold green)"
+only_attached = true
+
+[git_commit]
+format = " on [$hash](bold green)[$tag](purple)"
+style=""
+only_detached = true
+tag_disabled = false
+tag_symbol = " "
+
+[git_state]
+format = '[$state ]($style)[($progress_current/$progress_total)](yellow dimmed)'
+style="yellow bold"
+
+[cmd_duration]
+format = "[took $duration ](dimmed white)"
+
+[status]
+style = "bold red"
+format = "[$status](red)"
+disabled = false
+
+# [time]
+# disabled = false
+# format = "[$time ](dimmed white)"
+# use_12hr = true
+# time_format = '%R %p'
+
+[container]
+format = "[| ](bright-black dimmed)[ $symbol $name]($style) "
+
+[docker_context]
+format = "[| ](bright-black dimmed)[ $context](cyan) "
+disabled = false
+
+[nodejs]
+format = "[| ](bright-black dimmed)[󰎙 $version](green) "
+
+[php]
+format = "[| ](bright-black dimmed)[ $version](blue) "
+
+[python]
+format = "[| ](bright-black dimmed)[ $version](yellow) "
+
+[git_status]
+format="$staged$modified$untracked "
+untracked = '[󰈉 ](dimmed white)'
+modified = '[󰏫 ](yellow)'
+staged = '[ ](green)'
+
+[character]
+format = "$symbol"
+success_symbol = ""
+error_symbol = "[](red)"
+vimcmd_symbol =	''
+vimcmd_replace_one_symbol =	''
+vimcmd_replace_symbol =	''
+vimcmd_visual_symbol = ''
+
+[battery]
+format = "[$symbol$percentage ]($style)"
+full_symbol = '󰁹 '
+charging_symbol =	'󰂄 '
+discharging_symbol =	'󰂃 '
+unknown_symbol =	'󰁽 '
+empty_symbol =	'󰂎 '
+
+
+[[battery.display]]
+threshold = 10
+style = 'red'
+
+[[battery.display]]
+threshold = 30
+style = 'dimmed yellow'
+
+# [[battery.display]]
+# threshold = 100
+# style = 'dimmed green'
+
+[shell]
+# fish_indicator = '󰈺 '
+# bash_indicator = ' '
+# powershell_indicator = ' '
+# zsh_indicator =	'󰬡'
+# unknown_indicator = ''
+fish_indicator = 'fish '
+bash_indicator = 'bash '
+powershell_indicator = 'powershell '
+zsh_indicator =	'zsh'
+style = 'yellow dimmed'
+disabled = false
+format=' [using](default) [$indicator]($style)'
