@@ -1,0 +1,30 @@
+[core]
+	editor = nvim
+  whitespace = -trailing-space
+[user]
+	email = imrane.aabbou@gmail.com
+	name = Imrane Aabbou
+[color]
+  ui = auto
+[help]
+	autocorrect = true
+[status]
+	short = true
+  submoduleSummary = true
+[format]
+	pretty = %C(auto)%h%d %s
+[diff]
+  mnemonicPrefix = true
+[grep]
+  break = true
+  heading = true
+  lineNumber = true
+[alias]
+  aliases = !git config --get-regexp alias | sed -re 's/alias\\.(\\S*)\\s(.*)$/\\1 = \\2/g'
+  reword = commit --amend
+  untrack = rm --cache -- 
+  uncommit = reset --soft HEAD~1
+[push]
+  followTags = true
+[fetch]
+  recurseSubmodules = on-demand
