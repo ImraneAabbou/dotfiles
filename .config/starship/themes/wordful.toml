@@ -94,10 +94,15 @@ format = "[| ](bright-black dimmed)[ $version](blue) "
 format = "[| ](bright-black dimmed)[ $version](yellow) "
 
 [git_status]
-format="$staged$modified$untracked "
+format="$ahead_behind$stashed$staged$modified$untracked "
 untracked = '[󰈉 ](dimmed white)'
 modified = '[󰏫 ](yellow)'
-staged = '[ ](green)'
+staged = '[ ](green)'
+stashed     = '[ ](magenta)'
+ahead       = '[$count ](bold cyan)'
+behind      = '[$count ](dimmed white)'
+diverged = ""
+conflicted = ""
 
 [character]
 format = "$symbol"
