@@ -1,6 +1,7 @@
 [core]
 	editor = nvim
   whitespace = -trailing-space
+	pager = delta --side-by-side
 [user]
 	email = imrane.aabbou@gmail.com
 	name = Imrane Aabbou
