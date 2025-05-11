@@ -1,0 +1,9 @@
+envs:
+  - DOTFILES_PATH: $HOME/.dotfiles/
+  - DOTFILES_PATH: $HOME/.dotfiles/
+  - STOW_DIR: $DOTFILES_PATH
+  - STARSHIP_CONFIG: $DOTFILES_PATH/.config/starship/themes/wordful.toml
+  - STARSHIP_THEME: $STARSHIP_CONFIG
+  - ASDF_SHIMS_PATH: $HOME/.asdf/shims/
+  - PATH: $PATH:$HOME/.local/bin/:$ASDF_SHIMS_PATH
+

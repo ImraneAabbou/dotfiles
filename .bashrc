@@ -10,4 +10,6 @@ alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 eval -- "$(/usr/bin/starship init bash --print-full-init)"
 set -o vi
-source .env
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
