@@ -61,6 +61,7 @@ format = "[─\\[](dimmed white)[ $symbol $name]($style)[\\]](dimmed white)"
 [docker_context]
 format = "[─\\[](dimmed white)[ $context](cyan)[\\]](dimmed white)"
 disabled = false
+only_with_files = false
 
 [status]
 style = "bold red"

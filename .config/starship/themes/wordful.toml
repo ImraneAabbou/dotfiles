@@ -83,6 +83,7 @@ format = "[| ](bright-black dimmed)[ $symbol $name]($style) "
 [docker_context]
 format = "[| ](bright-black dimmed)[ $context](cyan) "
 disabled = false
+only_with_files = false
 
 [nodejs]
 format = "[| ](bright-black dimmed)[󰎙 $version](green) "
