@@ -12,3 +12,4 @@ envs:
     \e[0;36m│\n \e[0;36m╰─╼\e[0m "
 - XDG_CONFIG_HOME: $HOME/.config/
 - PREF_SHELL: /usr/bin/fish
+- ENVMAN_ENVSTORE_PATH: $HOME/.envstore.yml
