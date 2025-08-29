@@ -5,7 +5,8 @@ envs:
 - STARSHIP_CONFIG: $DOTFILES_PATH/.config/starship/themes/wordful.toml
 - STARSHIP_THEME: $STARSHIP_CONFIG
 - ASDF_SHIMS_PATH: $HOME/.asdf/shims/
-- PATH: $PATH:$HOME/.local/bin/:$ASDF_SHIMS_PATH
+- PNPM_HOME: $HOME/.local/share/pnpm
+- PATH: $PATH:$HOME/.local/bin/:$ASDF_SHIMS_PATH:$PNPM_HOME
 - SUDO_PROMPT: " \e[0;36m╭────────────────────────────────────────────────────────╮\e[0m\n
     \e[0;36m│\e[0m              \e[1;33m<<< \e[1;32m\U0001F6E1️ Password Required
     \e[1;33m>>>              \e[0m\e[0;36m│\e[0m\n \e[0;36m│────────────────────────────────────────────────────────╯\e[0m\n
