@@ -12,8 +12,8 @@
 [status]
 	# short = true
   submoduleSummary = true
-[format]
-	pretty = %C(auto)%h%d %s
+; [format]
+; 	pretty = %C(auto)%h%d %s
 [diff]
   mnemonicPrefix = true
 [grep]
