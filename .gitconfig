@@ -25,6 +25,8 @@
   reword = commit --amend
   untrack = rm --cache -- 
   uncommit = reset --soft HEAD~1
+  l = log --oneline --all --graph --abbrev-commit --decorate --date=relative --pretty=format:'%C(auto)%h%d %s %C(8)- <%an> (%cr) %Creset'
+  s = status -sb
 [push]
   followTags = true
   autoSetupRemote = true
