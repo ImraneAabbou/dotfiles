@@ -8,6 +8,7 @@
       "middle": [],
       "right": [
         "network",
+        "bluetooth",
         "volume",
         "battery",
         "systray",
@@ -60,5 +61,8 @@
   "menus.dashboard.shortcuts.right.shortcut1.tooltip": "",
   "menus.dashboard.shortcuts.right.shortcut3.icon": "",
   "menus.dashboard.shortcuts.right.shortcut3.command": "",
-  "menus.dashboard.shortcuts.right.shortcut3.tooltip": ""
+  "menus.dashboard.shortcuts.right.shortcut3.tooltip": "",
+  "bar.customModules.storage.paths": [
+    "/"
+  ]
 }
