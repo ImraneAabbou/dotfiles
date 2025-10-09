@@ -5,7 +5,9 @@
         "dashboard",
         "media"
       ],
-      "middle": [],
+      "middle": [
+        "workspaces"
+      ],
       "right": [
         "network",
         "bluetooth",
@@ -64,5 +66,14 @@
   "menus.dashboard.shortcuts.right.shortcut3.tooltip": "",
   "bar.customModules.storage.paths": [
     "/"
-  ]
+  ],
+  "theme.bar.buttons.workspaces.pill.active_width": "4em",
+  "theme.bar.buttons.workspaces.pill.width": "4em",
+  "theme.bar.buttons.workspaces.pill.height": "4em",
+  "theme.bar.buttons.workspaces.pill.radius": "1.9rem * 0.6",
+  "theme.bar.buttons.workspaces.active": "#cdd6f4",
+  "theme.bar.buttons.workspaces.hover": "#77767b",
+  "theme.bar.buttons.workspaces.numbered_active_underline_color": "#cdd6f4",
+  "theme.bar.buttons.workspaces.occupied": "#3d3846",
+  "theme.bar.buttons.workspaces.available": "#cdd6f4"
 }
