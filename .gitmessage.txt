@@ -1,0 +1,17 @@
+
+
+# <type>(<scope>): <short summary>
+# -------------------------------------------------
+# type: feat | fix | docs | style | refactor | test | chore
+# scope: optional context, e.g. auth, cart, ui
+# summary: imperative, concise (max 72 chars)
+#
+# -------------------------------------------------
+# Body: Explain what and why, not how.
+# - Use bullet points if needed.
+# - Keep lines under 100 chars.
+#
+# -------------------------------------------------
+# Footer: references, breaking changes, etc.
+# Closes #issue, Fixes #issue, Resolves #issue
+# BREAKING CHANGE: <description>

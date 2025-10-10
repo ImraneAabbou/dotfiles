@@ -32,3 +32,5 @@
   autoSetupRemote = true
 [fetch]
   recurseSubmodules = on-demand
+[commit]
+	template = ~/.gitmessage.txt
