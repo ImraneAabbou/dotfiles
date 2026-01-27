@@ -133,7 +133,7 @@ ForegroundPositive=0,110,40
 ForegroundVisited=224,64,251
 
 [General]
-ColorSchemeHash=0594cdbf8684a5ef175629572f86003b65badc3d
+ColorSchemeHash=625c32ae46f33771aca7694ab0deae5a44bbf41c
 
 [KDE]
 LookAndFeelPackage=com.github.vinceliuice.Layan
