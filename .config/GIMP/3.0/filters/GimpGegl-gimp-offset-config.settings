@@ -1,0 +1,11 @@
+# settings
+
+(GimpGegl-gimp-offset-config "2025-09-28 17:00:49"
+    (time 1759075249)
+    (color
+        (color "R'G'B'A float" 16 "\0\0\200\77\0\0\200\77\0\0\200\77\0\0\200\77" 0))
+    (type wrap-around)
+    (x 0)
+    (y 0))
+
+# end of settings

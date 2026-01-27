@@ -12,7 +12,7 @@
 (session-info "toplevel"
     (factory-entry "gimp-single-image-window")
     (position 0 0)
-    (size 1600 873)
+    (size 1584 862)
     (monitor 0)
     (open-on-exit)
     (aux-info
@@ -109,12 +109,12 @@
     (position 484 207))
 (session-info "toplevel"
     (factory-entry "gimp-file-open-dialog")
-    (position 45 45)
+    (position 0 0)
     (size 948 710)
     (monitor 0))
 (session-info "toplevel"
     (factory-entry "gimp-file-export-dialog")
-    (position 45 45)
+    (position 0 0)
     (size 948 710)
     (monitor 0))
 (session-info "toplevel"
